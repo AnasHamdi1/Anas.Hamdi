@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu&display=swap');
+.active{
+    color: #3d3d3d;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    /* background-color: rgb(234, 234, 234); */
+    background-color: white;
+
+}
+.head{
+    color: #edca00;
+    letter-spacing: 1.6px;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 23px;
+    display: flex;
+    justify-content: center;
+}
+::selection{
+    background-color: black;
+}
+/* header and navbar */
+header{
+    background-color: white;
+    width: 100%;
+    /* color: #ffd700; */
+    padding: 10px 170px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    z-index: 999;
+    justify-content: space-between;
+}
+
+header a{
+    text-decoration: none;
+}
+header .logo a{
+    font-size: 29.5px;
+    font-weight: 700;
+    color: #edca00;
+    text-transform: uppercase;
+}
+header nav a{
+    font-weight: 500;
+    margin: 18px;
+    color: #edca00;
+    transition: 400ms ease;
+}
+header nav a:hover{
+    color: #3d3d3d;
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/bright-cover.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #edca00;
+
+    
+}
+.main-head{
+    background-color: white;
+    color: #edca00;
+    padding: 15px;
+
+    font-size: 35px;
+    transition: 0.4s ease;
+}
+.main-head:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: #edca00;
+}
+.main-icon i{
+    color: #3d3d3d;
+    background-color: #edca00;
+    padding: 15px; 
+    font-size: 20px;
+    transition: 0.4s ease;
+} 
+.main-icon i:hover{
+    color: #4f4f4f;
+    background-color: #ffe343;
+
+}
+/* projects section */
+/* .latest{
+    height: 100vh;
+} */
+.projects{
+    /* background-color: #3d3d3d; */
+    border-bottom: 2px solid #edca00;
+
+}
+
+.projects .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px  0;
+}
+.projects a{
+    text-decoration: none;
+}
+.projects-card{
+    overflow: hidden;
+    background-color: #3d3d3d;
+    border: 1px solid #3d3d3d;
+    border-radius: 20px;
+    width: 300px;
+    min-height: 27px;
+    margin: 10px;
+    transition: 0.4s ease;
+}
+.projects-card:hover{
+    opacity: 0.8;
+    transform: 
+    scale(1.01);
+}
+.projects .projects-card img{
+    width: 100%;
+}
+.projects .projects-card .info{
+    padding: 15px;   
+}
+.projects-card-head{
+    color: #edca00;
+    letter-spacing: 1px;
+}
+.projects-card-text{
+    color: white;
+    font-weight: 500;
+}
+.projects-card-small{
+    margin-top: 6 px;
+}
+.projects-card-small small{
+    color: #edca00;
+}
+/* contact section */
+.contact{
+    border-bottom: 2px solid #edca00;
+}
+.contact .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contact-card{
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px #b7b7b7;
+    border-radius: 5px;
+    transition: 0.4s ease;
+    width: 250px;
+}
+.contact-card:hover{
+    opacity: 0.85;
+}
+.contact-card-icon{
+    color: #edca00;
+    font-size: 55px;
+    text-align: center;
+}
+.contact-card-head{
+    margin: 20px 10px 5px;
+    color: #edca00;
+    text-align: center;
+}
+.contact-card-text{
+    text-align: center;
+    color: #3d3d3d;
+    font-weight: 500;
+}
+.contact-head{
+    display: flex;
+    justify-content: center;
+}
+.advan-head{
+    letter-spacing: 0.5px;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 23px;
+    display: flex;
+    justify-content: center;
+}
+.head{
+    color: #edca00; 
+}
+.contact-link{
+    margin: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+.contact-link a{
+    margin: 0 20px;
+    text-decoration: none;
+    color: #edca00;
+    transition: 0.4s ease;
+}
+.contact-link a:hover{
+    color: #3d3d3d;
+
+}
+/* footer */
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #edca00;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+}
+footer .heart{
+    color: white;
+}

@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu&display=swap');
+.active{
+    color: white;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    /* background-color: rgb(234, 234, 234); */
+    background-color: #3d3d3d;
+
+}
+::selection{
+    background-color: black;
+}
+/* header and navbar */
+header{
+    background-color: #3d3d3d;
+    width: 100%;
+    /* color: #ffd700; */
+    padding: 10px 170px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    z-index: 999;
+    justify-content: space-between;
+}
+
+header a{
+    text-decoration: none;
+}
+header .logo a{
+    font-size: 29.5px;
+    font-weight: 700;
+    color: #edca00;
+    text-transform: uppercase;
+}
+header nav a{
+    font-weight: 500;
+    margin: 18px;
+    color: #edca00;
+    transition: 400ms ease;
+}
+header nav a:hover{
+    color: white;
+
+}
+section{
+    padding: 100px 200px;
+}
+
+/* main section */
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;  
+    align-items: center;
+    background: url(../img/main-cover.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    /* text-align: center;
+    justify-content: center; */
+    justify-content: space-between;
+    border-bottom: 2px solid #edca00;
+}
+/* main text */
+.main-text{
+    color: white;
+    background-color: #3d3d3d;
+    padding: 20px;
+    transition: 0.4s ease;
+}
+.main-text:hover{
+    transform: scale(1.1);
+    background-color: #4f4f4f;
+    color: #edca00;
+
+
+}
+.hello{
+    margin-bottom: 16px;
+    font-size: 18px;
+    /* color: white; */
+    font-weight: 800;
+}
+.full{
+    letter-spacing: 1.4px;
+
+    color: #edca00;
+
+    font-weight: 800;
+}
+.happy{
+    /* margin-top: 5px; */
+    /* color: white; */
+    letter-spacing: 1.6px;
+    font-size: 16px;
+}
+
+/* button */
+.main-btn{
+    background-color: #edca00;
+    color: #4f4f4f;
+    text-decoration: none;
+    display: inline-block; 
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.4s ease; 
+}
+.main-btn:hover{
+    background-color: #4f4f4f;
+    color: #edca00;
+    transform: scale(1.1);
+}
+/* about section */
+.about{
+    border-bottom: 2px solid #edca00;
+}
+.text{
+    text-align: center;
+
+}
+.head{
+   color: #edca00; 
+}
+.about-head{
+    letter-spacing: 1.6px;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 14px;
+}
+.normal-text{
+    color: white;
+}
+.about-text{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* advan section */
+.advan{
+    border-bottom: 2px solid #edca00;
+}
+.advan-head{
+    letter-spacing: 1.6px;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 23px;
+    display: flex;
+    justify-content: center;
+}
+.advan{ 
+    /* 
+    right and left padding in advan section 
+    ,because there is a 6 boxs in it and i want a 3 in line 1 and another 3 in next line
+     */
+    padding: 100px 50px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #3d3d3d;
+    width: 340px;
+    margin: 12px;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px black;
+    transition: 0.4s ease;
+}
+.card:hover{
+    transform: scale(1.030);
+}
+.icon{
+    font-size: 80px;
+    text-align: center;
+    color: #edca00;
+}
+.card-head{
+    color: #edca00;
+    margin: 10px;
+    font-size: 22px;      
+    /* font-weight: 720;       */
+}
+.card-text{
+    color: white;
+}
+.info{
+    /* letter-spacing: 1px; */
+    text-align: center;
+}
+/* skills section */
+.skills{
+    padding: 100px 400px;
+    border-bottom: 2px solid #edca00;
+    
+}
+.card-skills{
+    background-color: #3d3d3d;
+    width: 120px;
+    box-shadow: 0 4px 10px black;
+    border-radius: 14px;
+    padding: 5px 5px;
+    margin: 12px;
+    transition: 0.4s ease;
+}
+.card-skills:hover{
+    transform: scale(1.030);
+}
+.card-skills-icon{
+    font-size: 50px;
+    text-align: center;
+    color: #edca00;
+}
+.card-skills-head{
+    color: #edca00;
+}
+.ex{
+  padding-top: 37px;
+}
+.mo{
+    font-size: 17px;
+}
+.can{
+    padding: 100px 50px;
+    border-bottom: 2px solid #edca00;
+}
+.contact{
+    border-bottom: 2px solid #edca00;
+}
+.card-can{
+    background-color: #3d3d3d;
+    box-shadow: 0 4px 10px black;
+    width: 350px;
+    height: 400px;
+    padding: 50px 20px 20px 20px;
+    margin: 12px;
+    border-radius: 14px;
+    transition: 0.4s ease;
+    
+}
+.card-can:hover{
+    transform: scale(1.030);
+}
+.card-can-icon{
+    padding: 10px;
+    color: #edca00;
+    font-size: 80px;
+    text-align: center;
+}
+.card-can-head{
+    color: #edca00;
+    margin: 10px;
+    font-size: 22px;
+}
+.card-can-text{
+    color: white;
+    font-weight: 500;
+}
+/* contact section */
+.contact .advan-head{
+    letter-spacing: 0.5px;
+}
+.contact-card{
+    background-color: #3d3d3d;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px black;
+    border-radius: 5px;
+    transition: 0.4s ease;
+    width: 250px;
+}
+.contact-card:hover{
+    opacity: 0.85;
+}
+.contact-card-icon{
+    color: #edca00;
+    font-size: 55px;
+    text-align: center;
+}
+.contact-card-head{
+    margin: 20px 10px 5px;
+    color: #edca00;
+    text-align: center;
+}
+.contact-card-text{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+.contact-link{
+    margin: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+.contact-link a{
+    margin: 0 20px;
+    text-decoration: none;
+    color: #edca00;
+    transition: 0.4s ease;
+}
+.contact-link a:hover{
+    color: white;
+}
+/* footer */
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #edca00;
+    color: #3d3d3d;
+    padding: 10px;
+    font-weight: 600;
+}
+footer .heart{
+    color: white;
+}
